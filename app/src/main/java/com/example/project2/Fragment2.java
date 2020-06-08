@@ -15,13 +15,12 @@ import java.util.Arrays;
 
 
 public class Fragment2 extends Fragment {
-
+    int i=0;
     ImageView imageView = null;
     ArrayList<Integer> personImages;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         personImages = new ArrayList<>(Arrays.asList(R.drawable.animal13,
                 R.drawable.animal14, R.drawable.animal15,
                 R.drawable.animal16, R.drawable.animal17,
@@ -35,22 +34,35 @@ public class Fragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
-
-
-
         ViewGroup  root = (ViewGroup) inflater.inflate(R.layout.fragment_2, container, false);
+        imageView=root.findViewById(R.id.solo);
+        imageView.setImageResource(personImages.get(i));
 
-        RecyclerView recyclerView = (RecyclerView) root.findViewById(R.id.recyclerViewFrag2);
-        // set a LinearLayoutManager with default vertical orientation
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        recyclerView.setLayoutManager(linearLayoutManager);
-        //  call the constructor of CustomAdapter to send the reference and data to Adapter
-        CustomAdapter customAdapter = new CustomAdapter(getContext(), personImages);
-        recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
+//        RecyclerView recyclerView = (RecyclerView) root.findViewById(R.id.recyclerViewFrag2);
+//        // set a LinearLayoutManager with default vertical orientation
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+//        recyclerView.setLayoutManager(linearLayoutManager);
+//        //  call the constructor of CustomAdapter to send the reference and data to Adapter
+//        CustomAdapter customAdapter = new CustomAdapter(getContext(), personImages);
+//        recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
 
         // Inflate the layout for this fragment
         return root;
+    }
+
+    public void onFragmentInteraction(String msg) {
+        if(msg=="next"&&i<personImages.size())
+        {
+            i++;
+            imageView.setImageResource(personImages.get(i));
+        }
+        if(msg=="previous"&&i!=0)
+        {
+            i--;
+            imageView.setImageResource(personImages.get(i));
+
+
+        }
     }
 
 

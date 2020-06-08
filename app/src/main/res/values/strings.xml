@@ -6,4 +6,6 @@
     <string name="blank_fragment">blank fragment</string>
     <string name="message">message</string>
     <string name="send_message">send message</string>
+    <string name="previous"><![CDATA[<<]]></string>
+    <string name="next"><![CDATA[>>]]></string>
 </resources>

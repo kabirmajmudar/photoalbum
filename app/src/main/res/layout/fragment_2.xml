@@ -6,10 +6,11 @@
     tools:context="com.example.project2.Fragment2">
 
     <!-- TODO: Update blank fragment layout -->
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerViewFrag2"
+    <ImageView
+        android:id="@+id/solo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher" />
 
-    />
+
 </FrameLayout>
