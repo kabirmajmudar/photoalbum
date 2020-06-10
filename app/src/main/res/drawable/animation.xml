@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/animal13"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/animal14"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/animal15"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/animal16"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/animal17"
+        android:duration="3000"/>
+    <item
+        android:drawable="@drawable/animal18"
+        android:duration="3000"/>
+
+</animation-list>

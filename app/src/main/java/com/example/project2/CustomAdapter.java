@@ -61,7 +61,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                 super(itemView);
 
                 // get the reference of item view's
-                image = (ImageView) itemView.findViewById(R.id.image);
+                image = itemView.findViewById(R.id.image);
 
             }
         }
