@@ -1,17 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
-    android:id="@+id/container"
-    tools:context="com.example.project2.Fragment2">
+    tools:context=".Fragment3">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
-        android:id="@+id/solo"
+        android:id="@+id/slideShow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher" />
-
+        android:src="@drawable/animation"
+        />
 
 </FrameLayout>
